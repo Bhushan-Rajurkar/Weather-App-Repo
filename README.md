@@ -1,56 +1,118 @@
-# Welcome to your Expo app 👋
+🌤️ React Native Weather Dashboard
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A robust, cross-platform weather application built with **React Native** and the **Expo** framework (SDK 57). Designed with a calming, minimalist "Earth Tone" aesthetic, this app provides real-time meteorological data, hourly timelines, and multi-day forecasts for any global location using **WeatherAPI**.
 
-## Get started
+---
+📱 Visual Previews
 
-1. Install dependencies
+Here is how the application adapts seamlessly across different screen sizes:
 
-   ```bash
-   npm install
-   ```
+### Mobile View
+![Mobile View](image_6b691b.png)
 
-2. Start the app
+### Tablet / Web View
+![Tablet/Web View](image_6b68dd.png)
 
-   ```bash
-   npx expo start
-   ```
+---
+✨ Core Features
 
-In the output, you'll find options to open the app in a
+* **🌍 Global City Search:** Instantly retrieve weather conditions for any city worldwide.
+* **🌡️ Real-Time Conditions:** Current temperature, weather descriptions, humidity percentages, and wind speeds.
+* **🌅 Astronomical Data:** Accurate sunrise and sunset timings for the selected location.
+* **⏱️ Hourly Timeline:** A horizontally scrolling carousel displaying hourly temperature and condition trends.
+* **📅 3-Day Forecast:** Detailed min/max temperatures and daily weather outlook for the next three days.
+* **🎨 Earth Tone UI:** Clean styling built with a soft beige background (`#F5F5E9`), crisp white cards (`#FFFFFF`), and sage green accents (`#84A98C`).
+* **📱 Universal Platform Support:** Responsive across iOS, Android, and Web using Expo Router.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+🛠️ Tech Stack
 
-## Get a fresh project
+* **Framework:** [React Native](https://reactnative.dev/)
+* **Toolchain & Routing:** [Expo](https://expo.dev/) (SDK 57) / Expo Router
+* **Language:** TypeScript / TSX
+* **Data Fetching:** Native `fetch` API
+* **API Provider:** [WeatherAPI.com](https://www.weatherapi.com/) (`forecast.json` endpoint)
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+ 📁 Project Structure
+
+```text
+weather-app/
+├── assets/                 # Icons, splash screens, and images
+├── src/
+│   └── app/
+│       ├── _layout.tsx     # Root navigation & layout
+│       └── index.tsx       # Main weather screen & fetching logic
+├── app.json                # Expo project configuration
+├── package.json            # Dependencies & scripts
+└── README.md               # Project documentation
+
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-### Other setup steps
+ 🧰 Troubleshooting & Known Issues
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+**Dependency Conflicts (React / React Native version mismatches):**
+If dependency issues occur after forced audits, clean and rebuild using Expo's toolchain:
 
-## Learn more
+```powershell
+# 1. Remove corrupted dependencies
+Remove-Item -Recurse -Force node_modules
 
-To learn more about developing your project with Expo, look at the following resources:
+# 2. Install base Expo package
+npm install expo --legacy-peer-deps
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# 3. Align all package versions
+npx expo install --fix
 
-## Join the community
+```
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+ 📝 License
+
+This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
+
+---
+
+🚀 Getting Started
+
+### 1. Install dependencies:
+
+```bash
+npm install
+
+```
+
+*(Note: If you run into peer dependency conflicts, use `npm install --legacy-peer-deps` or run `npx expo install --fix`).*
+
+2. Configure API Key:
+
+* Get an API key from [WeatherAPI.com](https://www.weatherapi.com/).
+* Update `src/app/index.tsx` with your key:
+
+```typescript
+const API_KEY = 'YOUR_WEATHER_API_KEY_HERE';
+
+```
+
+3. Running the App:
+
+Start the Expo bundler with cache cleared:
+
+```bash
+npx expo start -c
+
+```
+
+* Press **`w`** to open in the browser.
+* Press **`a`** to open in an Android Emulator.
+* Press **`i`** to open in an iOS Simulator.
+* Scan the **QR Code** using the Expo Go mobile app.
+
+```
+
+```
