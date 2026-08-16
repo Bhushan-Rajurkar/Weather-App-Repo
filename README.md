@@ -3,18 +3,8 @@
 A robust, cross-platform weather application built with **React Native** and the **Expo** framework (SDK 57). Designed with a calming, minimalist "Earth Tone" aesthetic, this app provides real-time meteorological data, hourly timelines, and multi-day forecasts for any global location using **WeatherAPI**.
 
 ---
-📱 Visual Previews
 
-Here is how the application adapts seamlessly across different screen sizes:
 
-### Mobile View
-![Mobile View](Weather-App-Repo
-/Screenshot 2026-08-16 230125.png)
-### Mobile View
-![Mobile View](Weather-App-Repo/image_6b691b.png)
-
-### Tablet / Web View
-![Tablet/Web View](Weather-App-Repo/Screenshot%202026-08-16%20230125.png)
 ---
 ✨ Core Features
 
