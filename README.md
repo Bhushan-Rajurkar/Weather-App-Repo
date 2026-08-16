@@ -8,7 +8,8 @@ A robust, cross-platform weather application built with **React Native** and the
 Here is how the application adapts seamlessly across different screen sizes:
 
 ### Mobile View
-![Mobile View](Screenshot 2026-08-16 230125.png)
+![Mobile View](Weather-App-Repo
+/Screenshot 2026-08-16 230125.png)
 
 ### Tablet / Web View
 ![Tablet/Web View](image_6b68dd.png)
