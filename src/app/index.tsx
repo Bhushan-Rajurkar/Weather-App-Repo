@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 
 // Your WeatherAPI.com Key
-const API_KEY = '36b785f7daca472d968151352261608';
+const API_KEY = 'Api key from weatherapi.com';
 
 export default function Index() {
   const [city, setCity] = useState('');
