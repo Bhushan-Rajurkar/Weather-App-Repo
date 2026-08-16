@@ -10,10 +10,11 @@ Here is how the application adapts seamlessly across different screen sizes:
 ### Mobile View
 ![Mobile View](Weather-App-Repo
 /Screenshot 2026-08-16 230125.png)
+### Mobile View
+![Mobile View](Weather-App-Repo/image_6b691b.png)
 
 ### Tablet / Web View
-![Tablet/Web View](image_6b68dd.png)
-
+![Tablet/Web View](Weather-App-Repo/Screenshot%202026-08-16%20230125.png)
 ---
 ✨ Core Features
 
